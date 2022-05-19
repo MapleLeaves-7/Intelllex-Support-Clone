@@ -1,7 +1,7 @@
 import adminHomePage from '../images/admin-home-page.png';
-import MainSectionItem from './MainSectionItem';
+import { MainSectionItem } from './MainSectionItem';
 
-const Main = ({ scrollToID }) => {
+export function Main({ scrollToID }) {
   const mainSectionItems = [
     {
       id: 'source',
@@ -101,5 +101,4 @@ const Main = ({ scrollToID }) => {
       </div>
     </div>
   );
-};
-export default Main;
+}

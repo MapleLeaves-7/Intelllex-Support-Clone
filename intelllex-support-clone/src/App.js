@@ -1,7 +1,5 @@
 import './App.css';
-import Banner from './components/Banner';
-import Main from './components/Main';
-import { Footer } from './components';
+import { Banner, Main, Footer } from './components';
 
 function App() {
   const scrollToID = id => {

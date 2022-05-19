@@ -1,7 +1,7 @@
 import logo from '../images/intelllex-reversed-logo.png';
 import { ReactComponent as NavSquareArrow } from '../images/nav-square-arrow.svg';
 
-const Banner = () => {
+export function Banner() {
   return (
     <div id="banner">
       <div className="main-banner">
@@ -22,6 +22,4 @@ const Banner = () => {
       <div className="caption">Get more out of INTELLLEX</div>
     </div>
   );
-};
-
-export default Banner;
+}

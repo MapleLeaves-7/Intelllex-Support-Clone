@@ -1,4 +1,4 @@
-import Logo from '../images/intelllex-reversed-logo.png';
+import logo from '../images/intelllex-reversed-logo.png';
 import { ReactComponent as TwitterIcon } from '../images/twitter_icon.svg';
 import { ReactComponent as FacebookIcon } from '../images/facebook_icon.svg';
 import { ReactComponent as LinkedinIcon } from '../images/linkedin_icon.svg';
@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <div className="footer">
       <div className="footer-logo">
-        <img className="logo" src={Logo} alt="Intelllex Logo" />
+        <img className="logo" src={logo} alt="Intelllex Logo" />
       </div>
       <div className="footer-content">
         <div>

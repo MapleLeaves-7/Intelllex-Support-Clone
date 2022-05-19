@@ -1,4 +1,4 @@
-const MainSectionItem = ({ mainSectionItem }) => {
+export function MainSectionItem({ mainSectionItem }) {
   return (
     <div id={mainSectionItem.id} className="main-section-item">
       <h1>{mainSectionItem.heading}</h1>
@@ -21,6 +21,4 @@ const MainSectionItem = ({ mainSectionItem }) => {
       {mainSectionItem.otherElements.map(element => element)}
     </div>
   );
-};
-
-export default MainSectionItem;
+}
