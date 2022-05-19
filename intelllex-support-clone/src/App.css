@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Poppins';
-  src: url(fonts/Poppins-Regular.ttf);
+  src: url(fonts/Poppins-Medium.ttf);
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url(fonts/Poppins-Bold.ttf);
+  src: url(fonts/Poppins-SemiBold.ttf);
   font-weight: bold;
 }
 
@@ -24,7 +24,14 @@
 
 @font-face {
   font-family: 'Nunito';
-  src: url(fonts/Nunito-VariableFont_wght.ttf);
+  src: url(fonts/Nunito-Medium.ttf);
+  font-weight: normal; /* font-weight is 500 */
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(fonts/Nunito-ExtraBold.ttf);
+  font-weight: bold; /* font-weight is 800*/
 }
 
 *,
@@ -38,4 +45,43 @@
 
 #banner {
   background-image: linear-gradient(90deg, #2a4072 0, #4c78db);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  font-size: 1.68rem;
+  font-family: 'Nunito', san-serif;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-container > .heading {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.subheading {
+  font-family: 'Nunito', san-serif;
+  color: #ffd02f;
+  text-transform: uppercase;
+  letter-spacing: 0.175rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-left: 3px solid;
+}
+
+.main-banner {
+  display: flex;
+}
+
+.nav-to-intelllex {
+  font-size: 1rem;
 }
