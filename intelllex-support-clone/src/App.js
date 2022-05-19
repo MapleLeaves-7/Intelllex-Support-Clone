@@ -1,6 +1,7 @@
 import './App.css';
 import Banner from './components/Banner';
 import Main from './components/Main';
+import { Footer } from './components';
 
 function App() {
   const scrollToID = id => {
@@ -20,6 +21,7 @@ function App() {
     <div>
       <Banner />
       <Main scrollToID={scrollToID} />
+      <Footer />
     </div>
   );
 }
