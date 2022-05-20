@@ -21,7 +21,7 @@ export function Main({ scrollToID }) {
           link: 'source/refine-your-search',
         },
       ],
-      otherElements: [],
+      anchorTags: [],
     },
     {
       id: 'stacks',
@@ -50,7 +50,7 @@ export function Main({ scrollToID }) {
           link: 'stacks/share-and-request-for-access',
         },
       ],
-      otherElements: [],
+      anchorTags: [],
     },
     {
       id: 'admin',
@@ -71,7 +71,7 @@ export function Main({ scrollToID }) {
           link: 'admin/categories-management',
         },
       ],
-      otherElements: [],
+      anchorTags: [],
     },
     {
       id: 'contact',
@@ -81,7 +81,12 @@ export function Main({ scrollToID }) {
       ],
       images: [],
       links: [],
-      otherElements: [<a href="mailto:support@intelllex.com">Email us</a>],
+      anchorTags: [
+        {
+          text: 'Email us',
+          href: 'mailto:support@intelllex.com',
+        },
+      ],
     },
   ];
 
@@ -89,14 +94,18 @@ export function Main({ scrollToID }) {
     <div>
       <div className="main-nav">
         {mainSectionItems.map(item => (
-          <div className="main-nav-item" onClick={scrollToID(item.id)}>
+          <div
+            key={item.id}
+            className="main-nav-item"
+            onClick={scrollToID(item.id)}
+          >
             {item.heading}
           </div>
         ))}
       </div>
       <div className="main-section">
         {mainSectionItems.map(item => (
-          <MainSectionItem mainSectionItem={item} />
+          <MainSectionItem key={item.id} mainSectionItem={item} />
         ))}
       </div>
     </div>
