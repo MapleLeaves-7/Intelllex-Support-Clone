@@ -1,8 +1,8 @@
 import adminHomePage from '../images/admin-home-page.png';
-import { MainSectionItem } from './MainSectionItem';
+import { MainContentItem } from './MainContentItem';
 
 export function Main({ scrollToID }) {
-  const mainSectionItems = [
+  const mainContentItems = [
     {
       id: 'source',
       heading: 'SOURCE+ precise and aggregated search',
@@ -94,7 +94,7 @@ export function Main({ scrollToID }) {
     <div className="main-page">
       <div className="main-section">
         <div className="main-nav">
-          {mainSectionItems.map(item => (
+          {mainContentItems.map(item => (
             <div
               key={item.id}
               className="main-nav-item"
@@ -105,8 +105,8 @@ export function Main({ scrollToID }) {
           ))}
         </div>
         <div className="main-content">
-          {mainSectionItems.map(item => (
-            <MainSectionItem key={item.id} mainSectionItem={item} />
+          {mainContentItems.map(item => (
+            <MainContentItem key={item.id} mainContentItem={item} />
           ))}
         </div>
       </div>
