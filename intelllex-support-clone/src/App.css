@@ -43,49 +43,112 @@
   font-family: 'Asap', sans-serif;
 }
 
+/* Styles for the banner */
 #banner {
-  background-image: linear-gradient(90deg, #2a4072 0, #4c78db);
+  /* display stuff */
+  display: flex;
+  flex-direction: column;
+
+  /* box model stuff */
+  padding: 39px 85px 36px;
+
+  /* typography */
   font-family: 'Poppins', sans-serif;
   color: white;
+
+  /* miscellaneous */
+  background-image: linear-gradient(90deg, #2a4072 0, #4c78db);
+}
+
+/* Top row of banner */
+.header {
+  /* display stuff */
+  display: flex;
+  align-items: center;
+
+  /* positioning stuff */
+  position: relative;
 }
 
 .logo-container {
   display: flex;
+  align-items: center;
+
+  margin-right: 1rem;
+
   font-size: 1.68rem;
   font-family: 'Nunito', san-serif;
-  align-items: center;
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: auto;
+  height: 52px;
+  margin-right: 0.75rem;
 }
 
 .logo-container > .heading {
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
   font-weight: normal;
   font-size: 1em;
+  letter-spacing: 0.5rem;
+
+  text-transform: uppercase;
 }
 
 .subheading {
+  border-left: 3px solid;
+
+  padding-left: 22px;
+
   font-family: 'Nunito', san-serif;
   color: #ffd02f;
-  text-transform: uppercase;
   letter-spacing: 0.175rem;
   font-weight: bold;
   font-size: 1.5rem;
-  border-left: 3px solid;
-}
 
-.main-banner {
-  display: flex;
+  text-transform: uppercase;
 }
 
 .nav-to-intelllex {
-  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 1.125rem;
 }
 
+.nav-to-intelllex > a:link {
+  font-size: 1em;
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-to-intelllex > a:visited {
+  color: white;
+}
+
+.nav-square-arrow {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+}
+
+/* Bottom row of banner */
+.caption {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 3.125rem;
+  letter-spacing: -0.1rem;
+  margin: 50px 0 35px;
+}
+
+/* Styles for the footer */
 .social-icon {
   width: 50px;
   height: 50px;
