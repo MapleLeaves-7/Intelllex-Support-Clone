@@ -34,13 +34,19 @@
   font-weight: bold; /* font-weight is 800*/
 }
 
+:root {
+  --primary-font-family: 'Poppins';
+  --subheading-font-family: 'Nunito';
+  --content-font-family: 'Asap';
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Asap', sans-serif;
+  font-family: var(--primary-font-family), sans-serif;
 }
 
 /* Styles for the banner */
@@ -53,7 +59,6 @@
   padding: 39px 85px 36px;
 
   /* typography */
-  font-family: 'Poppins', sans-serif;
   color: white;
 
   /* miscellaneous */
@@ -77,7 +82,7 @@
   margin-right: 1rem;
 
   font-size: 1.68rem;
-  font-family: 'Nunito', san-serif;
+  font-family: var(--subheading-font-family), san-serif;
 }
 
 .logo {
@@ -121,7 +126,6 @@
 
 .nav-to-intelllex > a:link {
   font-size: 1em;
-  font-family: 'Poppins';
   font-weight: 600;
   color: white;
   text-decoration: none;
@@ -139,7 +143,6 @@
 
 /* Bottom row of banner */
 .caption {
-  font-family: 'Poppins';
   font-weight: 600;
   font-size: 3.125rem;
   letter-spacing: -0.1rem;
@@ -180,7 +183,6 @@
 .main-content-item > h1 {
   margin-bottom: 1rem;
 
-  font-family: 'Poppins';
   font-weight: 600;
   font-size: 3.125rem;
   line-height: 1.26;
@@ -191,8 +193,9 @@
   width: 100%;
 }
 
-.description {
-  font-family: 'Asap', 'Poppins', sans-serif;
+.description > * {
+  font-family: var(--content-font-family), var(--primary-font-family),
+    sans-serif;
   letter-spacing: 0.015rem;
   word-spacing: 0.01rem;
   line-height: 1.8;
