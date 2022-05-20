@@ -91,22 +91,24 @@ export function Main({ scrollToID }) {
   ];
 
   return (
-    <div>
-      <div className="main-nav">
-        {mainSectionItems.map(item => (
-          <div
-            key={item.id}
-            className="main-nav-item"
-            onClick={scrollToID(item.id)}
-          >
-            {item.heading}
-          </div>
-        ))}
-      </div>
+    <div className="main-page">
       <div className="main-section">
-        {mainSectionItems.map(item => (
-          <MainSectionItem key={item.id} mainSectionItem={item} />
-        ))}
+        <div className="main-nav">
+          {mainSectionItems.map(item => (
+            <div
+              key={item.id}
+              className="main-nav-item"
+              onClick={scrollToID(item.id)}
+            >
+              {item.heading}
+            </div>
+          ))}
+        </div>
+        <div className="main-content">
+          {mainSectionItems.map(item => (
+            <MainSectionItem key={item.id} mainSectionItem={item} />
+          ))}
+        </div>
       </div>
     </div>
   );

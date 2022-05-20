@@ -113,11 +113,6 @@
   justify-content: center;
   align-items: center;
 
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-
   font-size: 1.125rem;
 }
 
@@ -146,6 +141,65 @@
   font-size: 3.125rem;
   letter-spacing: -0.1rem;
   margin: 50px 0 35px;
+}
+
+/* Styles for main section */
+.main-page {
+  display: flex;
+  justify-content: center;
+}
+
+.main-section {
+  display: flex;
+  width: 75vw;
+  max-width: 1140px;
+  padding: 5rem 0;
+}
+
+/* Style main content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+}
+
+.main-content-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  max-width: 100%;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #bebebe;
+}
+
+.main-content-item > h1 {
+  margin-bottom: 1rem;
+
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 3.125rem;
+  line-height: 1.26;
+  color: #454d57;
+}
+
+.main-content-item img {
+  width: 100%;
+}
+
+.description {
+  font-family: 'Asap', 'Poppins', sans-serif;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.01rem;
+  line-height: 1.8;
+  color: #454d57;
+
+  margin-bottom: 1rem;
+}
+
+.description > * {
+  margin-bottom: 1rem;
 }
 
 /* Styles for the footer */
