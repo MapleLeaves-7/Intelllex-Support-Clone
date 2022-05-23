@@ -1,7 +1,7 @@
 import adminHomePage from '../images/admin-home-page.png';
-import { Navigation, Banner, MainContentItem } from '../components/';
+import { Navigation, MainContentItem } from '.';
 
-const Main = () => {
+export function Main() {
   const mainContentItems = [
     {
       id: 'source',
@@ -91,20 +91,15 @@ const Main = () => {
   ];
 
   return (
-    <>
-      <Banner isMainPage={true} />
-      <div className="main-part">
-        <div className="main-section">
-          <Navigation sections={mainContentItems} />
-          <div className="main-content">
-            {mainContentItems.map(item => (
-              <MainContentItem key={item.id} mainContentItem={item} />
-            ))}
-          </div>
+    <div className="main-part">
+      <div className="main-section">
+        <Navigation sections={mainContentItems} />
+        <div className="main-content">
+          {mainContentItems.map(item => (
+            <MainContentItem key={item.id} mainContentItem={item} />
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
-};
-
-export default Main;
+}

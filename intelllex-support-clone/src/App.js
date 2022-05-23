@@ -1,17 +1,11 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Footer, SubPage } from './components';
-import Main from './pages/Main';
+import { Banner, Main, Footer } from './components';
 
 function App() {
   return (
     <div>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="*" element={<SubPage />} />
-        </Routes>
-      </Router>
+      <Banner />
+      <Main />
       <Footer />
     </div>
   );
