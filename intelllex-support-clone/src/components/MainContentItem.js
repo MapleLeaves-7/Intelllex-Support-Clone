@@ -1,4 +1,5 @@
 export function MainContentItem({ mainContentItem }) {
+  console.log(mainContentItem.links);
   return (
     <div id={mainContentItem.id} className="main-content-item">
       <h1>{mainContentItem.heading}</h1>
@@ -11,7 +12,7 @@ export function MainContentItem({ mainContentItem }) {
             <img key={image.alt} src={image.src} alt={image.alt} />
           ))}
       </div>
-      {mainContentItem.links && (
+      {mainContentItem.links.length > 0 && (
         <div className="main-content-nav-section">
           {mainContentItem.links.map(link => (
             <a className="main-content-nav-item" key={link.heading} href="/">
@@ -21,9 +22,12 @@ export function MainContentItem({ mainContentItem }) {
         </div>
       )}
       {mainContentItem.id === 'contact' && (
-        <a className="email-us" href="mailto:support@intelllex.com">
-          Email us
-        </a>
+        <div>
+          <br />
+          <a className="button" href="mailto:support@intelllex.com">
+            Email us
+          </a>
+        </div>
       )}
     </div>
   );
