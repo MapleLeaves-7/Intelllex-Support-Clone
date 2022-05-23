@@ -1,7 +1,8 @@
 import adminHomePage from '../images/admin-home-page.png';
-import { MainContentItem } from './MainContentItem';
+import { MainContentItem } from '../components/MainContentItem';
+import { Navigation } from '../components/Navigation';
 
-export function Main({ scrollToID }) {
+const Main = () => {
   const mainContentItems = [
     {
       id: 'source',
@@ -93,17 +94,7 @@ export function Main({ scrollToID }) {
   return (
     <div className="main-page">
       <div className="main-section">
-        <div className="main-nav">
-          {mainContentItems.map(item => (
-            <div
-              key={item.id}
-              className="main-nav-item"
-              onClick={scrollToID(item.id)}
-            >
-              {item.heading}
-            </div>
-          ))}
-        </div>
+        <Navigation sections={mainContentItems} />
         <div className="main-content">
           {mainContentItems.map(item => (
             <MainContentItem key={item.id} mainContentItem={item} />
@@ -112,4 +103,6 @@ export function Main({ scrollToID }) {
       </div>
     </div>
   );
-}
+};
+
+export default Main;

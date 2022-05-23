@@ -1,24 +1,17 @@
 import './App.css';
-import { Banner, Main, Footer } from './components';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Banner, Footer } from './components';
+import Main from './pages/Main';
 
 function App() {
-  const scrollToID = id => {
-    return () => {
-      let element = document.getElementById(id);
-      console.log(element);
-      let yOffset = element.offsetTop;
-      console.log(yOffset);
-      element &&
-        window.scroll({
-          top: yOffset,
-          behavior: 'smooth',
-        });
-    };
-  };
   return (
     <div>
       <Banner />
-      <Main scrollToID={scrollToID} />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Main />} />
+        </Routes>
+      </Router>
       <Footer />
     </div>
   );
