@@ -1,7 +1,7 @@
 import logo from '../images/intelllex-reversed-logo.png';
 import { ReactComponent as NavSquareArrow } from '../images/nav-square-arrow.svg';
 
-export function Banner({ main }) {
+export function Banner({ isMainPage }) {
   return (
     <div id="banner">
       <div className="header">
@@ -15,7 +15,7 @@ export function Banner({ main }) {
           <a href="https://intelllex.com/">Back to INTELLLEX</a>
         </div>
       </div>
-      {main && <div className="caption">Get more out of INTELLLEX</div>}
+      {isMainPage && <div className="caption">Get more out of INTELLLEX</div>}
     </div>
   );
 }

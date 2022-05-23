@@ -92,7 +92,7 @@ const Main = () => {
 
   return (
     <>
-      <Banner main={true} />
+      <Banner isMainPage={true} />
       <div className="main-page">
         <div className="main-section">
           <Navigation sections={mainContentItems} />
