@@ -158,6 +158,8 @@
 .main-part {
   display: flex;
   justify-content: center;
+
+  padding: 0 1rem;
 }
 
 .main-section {
@@ -401,4 +403,59 @@
 
 .copyright-divider {
   margin: 0 3px;
+}
+
+@media screen and (max-width: 768px) {
+  #banner {
+    padding: 39px 25px 36px;
+  }
+
+  .logo-container > h1 {
+    display: none;
+  }
+
+  .main-section {
+    flex-direction: column;
+    gap: 1.5rem;
+
+    width: 70vw;
+    max-width: 1140px;
+    padding: 5rem 0;
+  }
+
+  .main-section > * {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .nav-to-intelllex {
+    display: none;
+  }
+
+  .main-section {
+    flex-grow: 1;
+  }
+
+  .main-content-nav-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer,
+  .footer * {
+    flex-direction: column;
+  }
+
+  .footer-row {
+    gap: 2rem;
+  }
+
+  .email-links {
+    margin-bottom: 1.5rem;
+  }
+
+  .moreinfo.footer-column a {
+    margin-bottom: 1rem;
+  }
 }
