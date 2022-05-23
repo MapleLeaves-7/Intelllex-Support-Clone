@@ -17,21 +17,23 @@ export function SubPage() {
   return (
     <>
       <Banner main={false} />
-      <div className="breadcrumb">
-        <Link to="/">Support</Link>
-        <span>&gt;</span>
-        <span>{title}</span>
-      </div>
-      <div className="main-part">
-        <div className="main-section">
-          <Navigation sections={sections} isSubPage={true} />
-          <div className="main-content">
-            <h1>{title}</h1>
-            <div>
-              Updated on {updatedDate.month} {updatedDate.day},{' '}
-              {updatedDate.year}
+      <div className="subpage-mid-section">
+        <div className="breadcrumb">
+          <Link to="/">Support</Link>
+          <span>&gt;</span>
+          <span>{title}</span>
+        </div>
+        <div className="main-part">
+          <div className="main-section">
+            <Navigation sections={sections} isSubPage={true} />
+            <div className="main-content">
+              <h1>{title}</h1>
+              <h3>
+                Updated on {updatedDate.month} {updatedDate.day},{' '}
+                {updatedDate.year}
+              </h3>
+              {content}
             </div>
-            {content}
           </div>
         </div>
       </div>
