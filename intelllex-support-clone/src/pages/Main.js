@@ -93,7 +93,7 @@ const Main = () => {
   return (
     <>
       <Banner isMainPage={true} />
-      <div className="main-page">
+      <div className="main-part">
         <div className="main-section">
           <Navigation sections={mainContentItems} />
           <div className="main-content">

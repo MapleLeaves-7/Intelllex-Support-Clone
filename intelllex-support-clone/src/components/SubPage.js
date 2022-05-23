@@ -22,14 +22,17 @@ export function SubPage() {
         <span>&gt;</span>
         <span>{title}</span>
       </div>
-      <div className="subpage-main-section">
-        <Navigation sections={sections} isSubPage={true} />
-        <div className="subpage-main-content">
-          <h1>{title}</h1>
-          <div>
-            Updated on {updatedDate.month} {updatedDate.day}, {updatedDate.year}
+      <div className="main-part">
+        <div className="main-section">
+          <Navigation sections={sections} isSubPage={true} />
+          <div className="main-content">
+            <h1>{title}</h1>
+            <div>
+              Updated on {updatedDate.month} {updatedDate.day},{' '}
+              {updatedDate.year}
+            </div>
+            {content}
           </div>
-          {content}
         </div>
       </div>
     </>
