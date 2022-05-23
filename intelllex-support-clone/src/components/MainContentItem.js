@@ -20,11 +20,11 @@ export function MainContentItem({ mainContentItem }) {
           ))}
         </div>
       )}
-      {mainContentItem.anchorTags.map(a => (
-        <a key={a.href} href={a.href}>
-          {a.text}
+      {mainContentItem.id === 'contact' && (
+        <a className="email-button" href="mailto:support@intelllex.com">
+          Email us
         </a>
-      ))}
+      )}
     </div>
   );
 }
