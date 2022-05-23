@@ -1,9 +1,8 @@
 export function MainContentItem({ mainContentItem }) {
-  console.log(mainContentItem.links);
   return (
-    <div id={mainContentItem.id} className="main-content-item">
+    <div id={mainContentItem.id}>
       <h1>{mainContentItem.heading}</h1>
-      <div className="description">
+      <div>
         {mainContentItem.paragraphs.map(paragraph => (
           <p key={paragraph}>{paragraph}</p>
         ))}
@@ -13,9 +12,9 @@ export function MainContentItem({ mainContentItem }) {
           ))}
       </div>
       {mainContentItem.links.length > 0 && (
-        <div className="main-content-nav-section">
+        <div>
           {mainContentItem.links.map(link => (
-            <a className="main-content-nav-item" key={link.heading} href="/">
+            <a key={link.heading} href="/">
               {link.heading}
             </a>
           ))}
@@ -24,9 +23,7 @@ export function MainContentItem({ mainContentItem }) {
       {mainContentItem.id === 'contact' && (
         <div>
           <br />
-          <a className="button" href="mailto:support@intelllex.com">
-            Email us
-          </a>
+          <a href="mailto:support@intelllex.com">Email us</a>
         </div>
       )}
     </div>

@@ -82,10 +82,10 @@ export function Main() {
   ];
 
   return (
-    <div className="main-part">
-      <div className="main-section">
+    <div>
+      <div>
         <Navigation sections={mainContentItems} />
-        <div className="main-content">
+        <div>
           {mainContentItems.map(item => (
             <MainContentItem key={item.id} mainContentItem={item} />
           ))}
