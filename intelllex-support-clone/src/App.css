@@ -405,7 +405,7 @@
   margin: 0 3px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 796px) {
   #banner {
     padding: 39px 25px 36px;
   }
