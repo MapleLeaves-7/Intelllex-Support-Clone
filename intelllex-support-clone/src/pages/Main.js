@@ -1,6 +1,5 @@
 import adminHomePage from '../images/admin-home-page.png';
-import { MainContentItem } from '../components/MainContentItem';
-import { Navigation } from '../components/Navigation';
+import { Navigation, Banner, MainContentItem } from '../components/';
 
 const Main = () => {
   const mainContentItems = [
@@ -92,16 +91,19 @@ const Main = () => {
   ];
 
   return (
-    <div className="main-page">
-      <div className="main-section">
-        <Navigation sections={mainContentItems} />
-        <div className="main-content">
-          {mainContentItems.map(item => (
-            <MainContentItem key={item.id} mainContentItem={item} />
-          ))}
+    <>
+      <Banner main={true} />
+      <div className="main-page">
+        <div className="main-section">
+          <Navigation sections={mainContentItems} />
+          <div className="main-content">
+            {mainContentItems.map(item => (
+              <MainContentItem key={item.id} mainContentItem={item} />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
