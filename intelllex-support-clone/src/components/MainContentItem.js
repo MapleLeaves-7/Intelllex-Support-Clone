@@ -14,14 +14,14 @@ export function MainContentItem({ mainContentItem }) {
       {mainContentItem.links && (
         <div className="main-content-nav-section">
           {mainContentItem.links.map(link => (
-            <div className="main-content-nav-item" key={link.heading}>
+            <a className="main-content-nav-item" key={link.heading} href="/">
               {link.heading}
-            </div>
+            </a>
           ))}
         </div>
       )}
       {mainContentItem.id === 'contact' && (
-        <a className="email-button" href="mailto:support@intelllex.com">
+        <a className="email-us" href="mailto:support@intelllex.com">
           Email us
         </a>
       )}
