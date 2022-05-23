@@ -21,7 +21,6 @@ export function Main() {
           link: 'source/refine-your-search',
         },
       ],
-      anchorTags: [],
     },
     {
       id: 'stacks',
@@ -50,7 +49,6 @@ export function Main() {
           link: 'stacks/share-and-request-for-access',
         },
       ],
-      anchorTags: [],
     },
     {
       id: 'admin',
@@ -71,7 +69,6 @@ export function Main() {
           link: 'admin/categories-management',
         },
       ],
-      anchorTags: [],
     },
     {
       id: 'contact',
@@ -81,12 +78,6 @@ export function Main() {
       ],
       images: [],
       links: [],
-      anchorTags: [
-        {
-          text: 'Email us',
-          href: 'mailto:support@intelllex.com',
-        },
-      ],
     },
   ];
 
