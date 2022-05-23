@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import { Banner, Main, Footer } from './components';
 
 function App() {
