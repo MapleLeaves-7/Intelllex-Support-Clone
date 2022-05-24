@@ -14,13 +14,6 @@
     background-color: rgba(173, 202, 221, 0.2);
   }
 
-  /* Links to other pages within content */
-  .content-nav-link::before {
-    content: '\2022';
-    color: #d8d8d8;
-    margin-right: 0.7rem;
-  }
-
   .footer a:link {
     @apply font-bold text-yellow-400 text-sm text-opacity-90;
   }
