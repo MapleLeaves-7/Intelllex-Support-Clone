@@ -3,3 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* Navigation section */
+  .nav-section-item {
+    @apply px-4 py-2 mb-2 font-primary font-medium tracking-tight leading-tight text-lg text-gray-600 rounded-sm cursor-pointer;
+  }
+
+  .nav-section-item:hover {
+    background-color: rgba(173, 202, 221, 0.2);
+  }
+
+  /* Links to other pages within content */
+  .content-nav-link::before {
+    content: '\2022';
+    color: #d8d8d8;
+    margin-right: 0.7rem;
+  }
+}

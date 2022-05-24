@@ -1,11 +1,14 @@
 import navService from '../services.js/nav';
 
-export function Navigation({ sections, isSubPage }) {
+export function Navigation({ sections }) {
   return (
     <div>
-      {isSubPage && <h2>Sections:</h2>}
       {sections.map(section => (
-        <div key={section.id} onClick={navService.scrollToID(section.id)}>
+        <div
+          key={section.id}
+          onClick={navService.scrollToID(section.id)}
+          className="nav-section-item"
+        >
           {section.heading}
         </div>
       ))}

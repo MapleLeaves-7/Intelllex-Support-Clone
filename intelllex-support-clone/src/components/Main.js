@@ -7,8 +7,8 @@ export function Main() {
       id: 'source',
       heading: 'SOURCE+ precise and aggregated search',
       paragraphs: [
-        'SOURCE+ is an intelligent legal search engine that understands legal concepts and their relevance to Cases, Commentaries and Court Submissions*.',
-        'It helps you find pertinent information quickly and efficiently across several Commonwealth jurisdictions. *Submissions from High Court of Australia will be available in the basic plan for limited period with Legislation & Regulations coming soon.',
+        'SOURCE+ is an intelligent legal search engine that understands legal concepts and their relevance to Cases, Commentaries and Court Submissions*. It helps you find pertinent information quickly and efficiently across several Commonwealth jurisdictions.',
+        '*Submissions from High Court of Australia will be available in the basic plan for limited period with Legislation & Regulations coming soon.',
       ],
       images: [],
       links: [
@@ -82,10 +82,10 @@ export function Main() {
   ];
 
   return (
-    <div>
-      <div>
+    <div className="flex justify-center">
+      <div style={{ width: '75vw' }} className="flex gap-6 max-w-5xl pt-20">
         <Navigation sections={mainContentItems} />
-        <div>
+        <div className="flex flex-col">
           {mainContentItems.map(item => (
             <MainContentItem key={item.id} mainContentItem={item} />
           ))}
