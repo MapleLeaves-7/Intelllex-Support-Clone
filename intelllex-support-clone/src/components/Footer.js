@@ -15,10 +15,10 @@ export function Footer() {
       <div style={{ flexGrow: '4' }}>
         <div className="flex gap-8 mb-12">
           <div>
-            <a class="block mb-5" href="https://intelllex.com/">
+            <a className="block mb-5" href="https://intelllex.com/">
               Products & Services
             </a>
-            <a class="block" href="https://intelllex.com/company">
+            <a className="block" href="https://intelllex.com/company">
               Meet the team
             </a>
           </div>
