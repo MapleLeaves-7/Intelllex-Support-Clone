@@ -82,7 +82,7 @@ export function Main() {
   ];
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mb-14">
       <div style={{ width: '75vw' }} className="flex gap-6 max-w-5xl pt-20">
         <Navigation sections={mainContentItems} />
         <div className="flex flex-col">
