@@ -20,4 +20,16 @@
     color: #d8d8d8;
     margin-right: 0.7rem;
   }
+
+  .footer a:link {
+    @apply font-bold text-yellow-400 text-sm text-opacity-90;
+  }
+
+  .footer a:visited {
+    @apply text-yellow-400 text-opacity-90;
+  }
+
+  .footer h3 {
+    @apply mb-2 font-normal text-gray-300 text-sm;
+  }
 }
