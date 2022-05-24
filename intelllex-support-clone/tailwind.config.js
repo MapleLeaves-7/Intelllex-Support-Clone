@@ -7,6 +7,10 @@ module.exports = {
         banner: ['Nunito', 'mono'],
         content: ['Asap', 'mono'],
       },
+      screens: {
+        md: '800px',
+        // => @media (min-width: 800px) { ... }
+      },
     },
   },
   plugins: [],

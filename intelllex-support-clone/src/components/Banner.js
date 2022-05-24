@@ -7,14 +7,14 @@ export function Banner() {
       style={{
         background: 'linear-gradient(to right,#2a4072 0, #4c78db)',
       }}
-      className="pt-10 px-20 pb-9 text-white"
+      className="pt-10 pb-9 px-10 md:px-20 text-white"
     >
       <div className="flex items-center font-banner mb-14">
         <div className="flex items-center">
           <img className="w-12 h-12 mr-4" src={logo} alt="Intelllex logo" />
           <h1
             style={{ letterSpacing: '0.4rem' }}
-            className="font-banner uppercase text-2xl pr-6"
+            className="hidden md:block font-banner uppercase text-2xl pr-6 "
           >
             Intelllex
           </h1>
@@ -25,7 +25,7 @@ export function Banner() {
         >
           Support
         </h2>
-        <div className="flex items-center ml-auto">
+        <div className="hidden sm:flex items-center ml-auto">
           <NavSquareArrow className="w-6 h-6 mr-2" />
           <a
             className="font-primary text-lg font-bold"

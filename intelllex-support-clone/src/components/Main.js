@@ -83,7 +83,7 @@ export function Main() {
 
   return (
     <div className="flex justify-center mb-14">
-      <div style={{ width: '75vw' }} className="flex gap-6 max-w-5xl pt-20">
+      <div className="flex flex-col gap-6 pt-16 w-11/12 max-w-lg md:flex-row md:max-w-5xl 2xl:max-w-7xl md:pt-20">
         <Navigation sections={mainContentItems} />
         <div className="flex flex-col">
           {mainContentItems.map(item => (
