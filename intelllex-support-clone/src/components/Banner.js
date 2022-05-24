@@ -9,19 +9,19 @@ export function Banner() {
       }}
       className="pt-10 px-20 pb-9 text-white"
     >
-      <div className="flex items-center font-banner mb-10">
+      <div className="flex items-center font-banner mb-14">
         <div className="flex items-center">
           <img className="w-12 h-12 mr-4" src={logo} alt="Intelllex logo" />
           <h1
             style={{ letterSpacing: '0.4rem' }}
-            className="font-banner uppercase text-3xl pr-6"
+            className="font-banner uppercase text-2xl pr-6"
           >
             Intelllex
           </h1>
         </div>
         <h2
-          style={{ borderLeft: '3px solid', fontSize: '1.68rem' }}
-          className="inline-block pl-6 font-banner font-bold text-yellow-400 uppercase tracking-widest"
+          style={{ borderLeft: '3px solid' }}
+          className="inline-block pl-6 font-banner font-bold text-2xl text-yellow-400 uppercase tracking-widest"
         >
           Support
         </h2>
@@ -35,7 +35,10 @@ export function Banner() {
           </a>
         </div>
       </div>
-      <div style={{ fontSize: '3.125rem' }} className="font-primary mb-6">
+      <div
+        style={{ fontSize: '3.125rem' }}
+        className="mb-8 font-primary font-bold tracking-tight"
+      >
         Get more out of INTELLLEX
       </div>
     </div>
