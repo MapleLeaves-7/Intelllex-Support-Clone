@@ -21,7 +21,7 @@ export function Banner() {
         </div>
         <h2
           style={{ borderLeft: '3px solid', fontSize: '1.68rem' }}
-          className="inline-block font-banner text-yellow-400 uppercase tracking-widest font-bold pl-6"
+          className="inline-block pl-6 font-banner font-bold text-yellow-400 uppercase tracking-widest"
         >
           Support
         </h2>
