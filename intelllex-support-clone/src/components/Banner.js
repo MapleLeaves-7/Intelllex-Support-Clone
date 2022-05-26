@@ -3,7 +3,7 @@ import { ReactComponent as NavSquareArrow } from '../images/nav-square-arrow.svg
 
 export function Banner() {
   return (
-    <div
+    <header
       style={{
         background: 'linear-gradient(to right,#2a4072 0, #4c78db)',
       }}
@@ -41,6 +41,6 @@ export function Banner() {
       >
         Get more out of INTELLLEX
       </div>
-    </div>
+    </header>
   );
 }
