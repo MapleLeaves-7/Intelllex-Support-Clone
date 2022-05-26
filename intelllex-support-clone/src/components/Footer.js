@@ -5,10 +5,7 @@ import { ReactComponent as LinkedinIcon } from '../images/linkedin_icon.svg';
 
 export function Footer() {
   return (
-    <footer
-      style={{ backgroundColor: '#1b2533' }}
-      className="flex flex-col gap-10 px-24 py-14 font-primary text-gray-200 text-sm md:flex-row"
-    >
+    <footer className="flex flex-col gap-10 px-24 py-14 font-primary bg-midnight text-gray-200 text-sm md:flex-row">
       <div className="flex-grow flex-shrink-0">
         <img className="w-14 h-14" src={logo} alt="Intelllex Logo" />
       </div>
