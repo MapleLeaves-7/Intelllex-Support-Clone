@@ -45,22 +45,19 @@ export function Footer() {
             <h3>Connect with us</h3>
             <div className="flex gap-4">
               <a
-                className="flex justify-center items-center w-10 h-10 bg-gray-500 rounded-full hover:bg-gray-400"
+                className="social-icon"
                 href="https://www.facebook.com/intelllex/"
               >
-                <FacebookIcon className="w-7 h-7" />
+                <FacebookIcon />
               </a>
               <a
-                className="flex justify-center items-center w-10 h-10 bg-gray-500 rounded-full hover:bg-gray-400"
+                className="social-icon"
                 href="https://sg.linkedin.com/company/intelllex"
               >
-                <LinkedinIcon className="w-7 h-7" />
+                <LinkedinIcon />
               </a>
-              <a
-                className="flex justify-center items-center w-10 h-10 bg-gray-500 rounded-full hover:bg-gray-400"
-                href="https://twitter.com/intelllexhq"
-              >
-                <TwitterIcon className="w-7 h-7" />
+              <a className="social-icon" href="https://twitter.com/intelllexhq">
+                <TwitterIcon />
               </a>
             </div>
           </section>

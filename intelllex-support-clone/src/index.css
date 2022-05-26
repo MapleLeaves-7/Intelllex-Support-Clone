@@ -16,4 +16,12 @@
   footer h3 {
     @apply mb-2 font-normal text-gray-300 text-sm;
   }
+
+  .social-icon {
+    @apply flex justify-center items-center w-10 h-10 bg-gray-500 rounded-full hover:bg-gray-400;
+  }
+
+  .social-icon > * {
+    @apply w-7 h-7;
+  }
 }
