@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem; /* same as padding top for each article section */
+  }
+}
+
 @layer components {
   footer a:link {
     @apply font-bold text-yellow-400 text-sm text-opacity-90;
