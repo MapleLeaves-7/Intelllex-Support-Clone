@@ -1,5 +1,5 @@
 import adminHomePage from '../images/admin-home-page.png';
-import { Navigation, MainContentItem } from '.';
+import { Navigation, MainContentItem } from '../components';
 
 export function Main() {
   const mainContentItems = [

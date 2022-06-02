@@ -1,4 +1,5 @@
-import { Banner, Main, Footer } from './components';
+import { Banner, Footer } from './components';
+import { Main } from './pages';
 
 function App() {
   return (
