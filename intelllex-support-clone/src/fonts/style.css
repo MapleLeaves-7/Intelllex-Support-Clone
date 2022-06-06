@@ -17,6 +17,19 @@
 }
 
 @font-face {
+  font-family: 'Asap';
+  src: url(./Asap-Bold.ttf);
+  font-weight: bold; /* font-weight is 700 */
+}
+
+@font-face {
+  font-family: 'Asap';
+  src: url(./Asap-BoldItalic.ttf);
+  font-weight: bold; /* font-weight is 700 */
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'Nunito';
   src: url(./Nunito-Medium.ttf);
   font-weight: normal; /* font-weight is 500 */
