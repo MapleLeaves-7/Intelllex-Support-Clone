@@ -1,7 +1,7 @@
 export function MainContentItem({ mainContentItem }) {
   console.log(mainContentItem.links);
   return (
-    <div id={mainContentItem.id} className="main-content-item">
+    <article id={mainContentItem.id} className="main-content-item">
       <h1>{mainContentItem.heading}</h1>
       <div className="description">
         {mainContentItem.paragraphs.map(paragraph => (
@@ -13,13 +13,13 @@ export function MainContentItem({ mainContentItem }) {
           ))}
       </div>
       {mainContentItem.links.length > 0 && (
-        <div className="main-content-nav-section">
+        <aside className="main-content-nav-section">
           {mainContentItem.links.map(link => (
             <a className="main-content-nav-item" key={link.heading} href="/">
               {link.heading}
             </a>
           ))}
-        </div>
+        </aside>
       )}
       {mainContentItem.id === 'contact' && (
         <div>
@@ -29,6 +29,6 @@ export function MainContentItem({ mainContentItem }) {
           </a>
         </div>
       )}
-    </div>
+    </article>
   );
 }

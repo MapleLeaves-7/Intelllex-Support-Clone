@@ -5,13 +5,14 @@ import { ReactComponent as LinkedinIcon } from '../images/linkedin_icon.svg';
 
 export function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer-logo">
         <img src={logo} alt="Intelllex Logo" />
       </div>
       <div className="footer-content">
         <div className="footer-row">
-          <div className="moreinfo footer-column">
+          {/* More information section */}
+          <section className="moreinfo footer-column">
             <a className="footer-heading-link" href="https://intelllex.com/">
               Products & Services
             </a>
@@ -21,24 +22,28 @@ export function Footer() {
             >
               Meet the team
             </a>
-          </div>
-          <div className="footer-column">
+          </section>
+
+          {/* Contact us section */}
+          <section className="footer-column">
             <h3>Contact us</h3>
-            <div className="email-links">
-              <div className="email">
-                <p>For support issues:</p>
+            <dl className="email-links">
+              <dt>For support issues:</dt>
+              <dd>
                 <a href="mailto:support@intelllex.com">support@intelllex.com</a>
-              </div>
-              <div className="email">
-                <p>Contact sales:</p>
+              </dd>
+              <dt>Contact sales:</dt>
+              <dd>
                 <a href="mailto:contact@intelllex.com">contact@intelllex.com</a>
-              </div>
-            </div>
+              </dd>
+            </dl>
             <div className="address">
               276A South Bridge Rd, Singapore 058825
             </div>
-          </div>
-          <div className="social footer-column">
+          </section>
+
+          {/* Connect with us section */}
+          <section className="social footer-column">
             <h3>Connect with us</h3>
             <div className="social-icons-section">
               <a
@@ -60,16 +65,17 @@ export function Footer() {
                 <TwitterIcon className="social-icon" />
               </a>
             </div>
-          </div>
+          </section>
         </div>
 
-        <div>
+        {/* Copyright section */}
+        <section>
           <span className="copyright">&copy; INTELLLEX</span>
           <a href="https://intelllex.com/privacy">Privacy</a>
           <span className="copyright-divider"> | </span>
           <a href="https://intelllex.com/terms">Terms</a>
-        </div>
+        </section>
       </div>
-    </div>
+    </footer>
   );
 }

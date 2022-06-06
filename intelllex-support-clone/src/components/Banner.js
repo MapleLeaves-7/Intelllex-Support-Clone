@@ -3,7 +3,7 @@ import { ReactComponent as NavSquareArrow } from '../images/nav-square-arrow.svg
 
 export function Banner() {
   return (
-    <div id="banner">
+    <header id="banner">
       <div className="header">
         <div className="logo-container">
           <img src={logo} alt="Intelllex logo" className="logo" />
@@ -16,6 +16,6 @@ export function Banner() {
         </div>
       </div>
       <div className="caption">Get more out of INTELLLEX</div>
-    </div>
+    </header>
   );
 }

@@ -3,11 +3,11 @@ import { Banner, Main, Footer } from './components';
 
 function App() {
   return (
-    <div>
+    <main>
       <Banner />
       <Main />
       <Footer />
-    </div>
+    </main>
   );
 }
 
