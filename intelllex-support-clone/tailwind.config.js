@@ -13,6 +13,10 @@ module.exports = {
       },
       colors: {
         midnight: '#1b2533',
+        'dark-gray': '#454d57',
+        'light-gray': '#bebebe',
+        'off-white': '#f7f7f7',
+        'hover-color': 'rgba(173,202,221,.2)',
       },
     },
   },
