@@ -7,7 +7,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 3.5rem; /* same as padding top for each article section */
+    /* scroll-padding-top: 3.5rem; same as padding top for each article section */
   }
 }
 
@@ -30,5 +30,24 @@
 
   .social-icon > * {
     @apply w-7 h-7;
+  }
+
+  .subpage-content-item {
+    @apply mb-10 font-content  text-dark-gray;
+  }
+
+  .subpage-content-item h2 {
+    @apply mb-6 font-bold text-3xl;
+  }
+
+  .subpage-content-item ul {
+    @apply list-disc;
+  }
+
+  .subpage-content-item li {
+    @apply ml-8 mb-2;
+  }
+  .subpage-content-item p {
+    @apply mb-4;
   }
 }
