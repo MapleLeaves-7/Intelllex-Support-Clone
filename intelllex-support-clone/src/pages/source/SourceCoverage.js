@@ -3,12 +3,13 @@ import {
   Navigation,
   RequestContentInclusion,
 } from '../../components';
+import { convertToId } from '../../utils';
 export function SourceCoverage() {
   const sections = [
-    { id: 'legal-commentaries', heading: 'Legal Commentaries' },
-    { id: 'cases', heading: 'Cases' },
-    { id: 'submissions', heading: 'Submissions' },
-    { id: 'legislation-and-regulations', heading: 'Legislation & Regulation' },
+    'Legal Commentaries',
+    'Cases',
+    'Submissions',
+    'Legislation & Regulation',
   ];
   return (
     <main className="subpage-main">
@@ -23,7 +24,10 @@ export function SourceCoverage() {
               <div className="">Updated on April 14, 2022</div>
             </header>
 
-            <section id={sections[0].id} className="subpage-content-item">
+            <section
+              id={convertToId(sections[0])}
+              className="subpage-content-item"
+            >
               <h2>Legal Commentaries</h2>
               <p>A curated selection of sources are available:</p>
               <ul>
@@ -33,7 +37,10 @@ export function SourceCoverage() {
               </ul>
             </section>
 
-            <section id={sections[1].id} className="subpage-content-item">
+            <section
+              id={convertToId(sections[1])}
+              className="subpage-content-item"
+            >
               <h2>Cases</h2>
               <p>
                 Coverage extends to courts/tribunals of varying authority, from
@@ -54,7 +61,10 @@ export function SourceCoverage() {
               </ul>
             </section>
 
-            <section id={sections[2].id} className="subpage-content-item">
+            <section
+              id={convertToId(sections[2])}
+              className="subpage-content-item"
+            >
               <h2>Submissions</h2>
               <p>
                 Submissions from High Court of Australia will be available in
@@ -63,7 +73,10 @@ export function SourceCoverage() {
               </p>
             </section>
 
-            <section id={sections[3].id} className="subpage-content-item">
+            <section
+              id={convertToId(sections[3])}
+              className="subpage-content-item"
+            >
               <h2>Legislation & Regulations</h2>
               <p>Legislation & Regulations search coming soon.</p>
             </section>
