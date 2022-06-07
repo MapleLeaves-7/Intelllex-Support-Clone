@@ -1,7 +1,7 @@
 import logo from '../images/intelllex-reversed-logo.png';
 import { ReactComponent as NavSquareArrow } from '../images/nav-square-arrow.svg';
 
-export function Banner() {
+export function Banner({ isMainPage }) {
   return (
     <header
       style={{
@@ -9,7 +9,7 @@ export function Banner() {
       }}
       className="pt-10 pb-9 px-10 md:px-20 text-white"
     >
-      <div className="flex items-center font-banner mb-14">
+      <div className="flex items-center font-banner">
         <div className="flex items-center">
           <img className="w-12 h-12 mr-4" src={logo} alt="Intelllex logo" />
           <h1
@@ -35,12 +35,14 @@ export function Banner() {
           </a>
         </div>
       </div>
-      <div
-        style={{ fontSize: '3.125rem' }}
-        className="mb-8 font-primary font-bold tracking-tight"
-      >
-        Get more out of INTELLLEX
-      </div>
+      {isMainPage && (
+        <div
+          style={{ fontSize: '3.125rem' }}
+          className="mt-14 mb-8 font-primary font-bold tracking-tight"
+        >
+          Get more out of INTELLLEX
+        </div>
+      )}
     </header>
   );
 }

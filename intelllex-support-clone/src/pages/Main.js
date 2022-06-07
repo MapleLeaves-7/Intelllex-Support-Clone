@@ -1,5 +1,5 @@
 import adminHomePage from '../images/admin-home-page.png';
-import { Navigation, MainContentItem } from '../components';
+import { Navigation, MainContentItem, Banner } from '../components';
 
 export function Main() {
   const mainContentItems = [
@@ -82,15 +82,18 @@ export function Main() {
   ];
 
   return (
-    <main className="flex justify-center mb-14">
-      <div className="flex flex-col gap-6 pt-16 w-11/12 max-w-lg md:flex-row md:max-w-2xl xl:max-w-5xl 2xl:max-w-7xl md:pt-20">
-        <Navigation sections={mainContentItems} />
-        <div className="flex flex-col">
-          {mainContentItems.map(item => (
-            <MainContentItem key={item.id} mainContentItem={item} />
-          ))}
+    <>
+      <Banner isMainPage={true} />
+      <main className="flex justify-center mb-14">
+        <div className="flex flex-col gap-6 pt-16 w-11/12 max-w-lg md:flex-row md:max-w-2xl xl:max-w-5xl 2xl:max-w-7xl md:pt-20">
+          <Navigation sections={mainContentItems} />
+          <div className="flex flex-col">
+            {mainContentItems.map(item => (
+              <MainContentItem key={item.id} mainContentItem={item} />
+            ))}
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }

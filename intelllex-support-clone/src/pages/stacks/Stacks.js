@@ -1,12 +1,21 @@
 import { useParams } from 'react-router-dom';
+import { Banner } from '../../components';
 import { Error } from '../Error';
 import { SourceCoverage } from './SourceCoverage';
 export function Stacks() {
   let { page } = useParams();
+  let content;
   switch (page) {
     case 'source-coverage':
-      return <SourceCoverage />;
+      content = <SourceCoverage />;
+      break;
     default:
-      return <Error />;
+      content = <Error />;
   }
+  return (
+    <>
+      <Banner />
+      {content}
+    </>
+  );
 }
