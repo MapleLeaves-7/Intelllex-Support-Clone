@@ -18,12 +18,12 @@ export function SourceCoverage() {
           <Navigation sections={sections} isSubPage={true} />
 
           <div className="flex flex-col px-20 py-14 border border-light-gray bg-white">
-            <heading className="mb-10">
+            <header className="mb-10">
               <h1 className="font-bold text-5xl text-dark-gray leading-snug">
                 SOURCE+ Coverage
               </h1>
               <div className="text-light-gray">Updated on April 14, 2022</div>
-            </heading>
+            </header>
 
             <section id={sections[0].id} className="subpage-content-item">
               <h2>Legal Commentaries</h2>
