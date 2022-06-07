@@ -32,6 +32,26 @@
     @apply w-7 h-7;
   }
 
+  .subpage-main {
+    @apply flex justify-center items-center pb-14 pt-10 font-primary bg-off-white;
+  }
+
+  .subpage-container {
+    @apply flex flex-col gap-10 w-11/12 max-w-lg md:w-9/12 md:max-w-none xl:max-w-5xl 2xl:max-w-7xl;
+  }
+
+  .subpage-content {
+    @apply flex flex-col px-20 py-14 border border-light-gray bg-white;
+  }
+
+  .subpage-content > header {
+    @apply mb-10 text-light-gray;
+  }
+
+  .subpage-content > header > h1 {
+    @apply font-bold text-5xl text-dark-gray leading-snug;
+  }
+
   .subpage-content-item {
     @apply mb-10 font-content  text-dark-gray;
   }

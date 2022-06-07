@@ -11,18 +11,16 @@ export function SourceCoverage() {
     { id: 'legislation-and-regulations', heading: 'Legislation & Regulation' },
   ];
   return (
-    <main className="flex justify-center items-center pb-14 pt-10 font-primary bg-off-white">
-      <div className="flex flex-col gap-10 w-11/12 max-w-lg md:w-9/12 md:max-w-none xl:max-w-5xl 2xl:max-w-7xl">
+    <main className="subpage-main">
+      <div className="subpage-container">
         <Breadcrumb pageName="SOURCE+ Coverage" />
         <div className="flex flex-col md:flex-row">
           <Navigation sections={sections} isSubPage={true} />
 
-          <div className="flex flex-col px-20 py-14 border border-light-gray bg-white">
-            <header className="mb-10">
-              <h1 className="font-bold text-5xl text-dark-gray leading-snug">
-                SOURCE+ Coverage
-              </h1>
-              <div className="text-light-gray">Updated on April 14, 2022</div>
+          <div className="subpage-content">
+            <header>
+              <h1>SOURCE+ Coverage</h1>
+              <div className="">Updated on April 14, 2022</div>
             </header>
 
             <section id={sections[0].id} className="subpage-content-item">
