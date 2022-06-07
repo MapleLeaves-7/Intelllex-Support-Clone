@@ -1,5 +1,5 @@
 import { Footer } from './components';
-import { Main, Stacks, Error } from './pages';
+import { Main, Source, Error } from './pages';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/stacks/:page" element={<Stacks />} />
+          <Route path="/source/:page" element={<Source />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

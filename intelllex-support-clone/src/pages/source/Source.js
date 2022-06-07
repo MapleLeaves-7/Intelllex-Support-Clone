@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { Banner } from '../../components';
 import { Error } from '../Error';
 import { SourceCoverage } from './SourceCoverage';
-export function Stacks() {
+export function Source() {
   let { page } = useParams();
   let content;
   switch (page) {
