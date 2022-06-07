@@ -14,11 +14,11 @@ export function Main() {
       links: [
         {
           heading: 'SOURCE+ Content Coverage',
-          link: 'source/source-coverage',
+          link: '/source/source-coverage',
         },
         {
           heading: 'Refine Your Search (Boolean Guide)',
-          link: 'source/refine-your-search',
+          link: '/source/refine-your-search',
         },
       ],
     },
@@ -34,19 +34,19 @@ export function Main() {
       links: [
         {
           heading: 'Sync or Upload Your Folders and Files',
-          link: 'stacks/sync-or-upload-your-folders-and-files/',
+          link: '/stacks/sync-or-upload-your-folders-and-files/',
         },
         {
           heading: 'Organise your STACKS',
-          link: 'stacks/organise-your-stacks',
+          link: '/stacks/organise-your-stacks',
         },
         {
           heading: 'Search in STACKS',
-          link: 'stacks/search-in-stacks/',
+          link: '/stacks/search-in-stacks/',
         },
         {
           heading: 'Share and Request for Access',
-          link: 'stacks/share-and-request-for-access',
+          link: '/stacks/share-and-request-for-access',
         },
       ],
     },

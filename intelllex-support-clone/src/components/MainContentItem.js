@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 export function MainContentItem({ mainContentItem }) {
   return (
     <article className="mb-14 border-b border-gray-300" id={mainContentItem.id}>
@@ -21,13 +22,13 @@ export function MainContentItem({ mainContentItem }) {
       {mainContentItem.links.length > 0 && (
         <aside className="grid grid-cols-2 gap-6 mb-12 font-primary font-bold text-lg text-blue-600 text-opacity-95">
           {mainContentItem.links.map(link => (
-            <a
+            <Link
               className="before:content-['\2022'] before:mr-2 before:text-gray-300"
               key={link.heading}
-              href="/"
+              to={link.link}
             >
               {link.heading}
-            </a>
+            </Link>
           ))}
         </aside>
       )}
