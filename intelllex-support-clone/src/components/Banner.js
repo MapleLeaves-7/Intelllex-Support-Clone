@@ -7,7 +7,7 @@ export function Banner({ isMainPage }) {
       style={{
         background: 'linear-gradient(to right,#2a4072 0, #4c78db)',
       }}
-      className="pt-10 pb-9 px-10 md:px-20 text-white"
+      className="py-6 px-7 md:px-20 text-white"
     >
       <div className="flex items-center font-banner">
         <div className="flex items-center">
