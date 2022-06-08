@@ -81,7 +81,7 @@
   }
 
   .list-disc {
-    @apply leading-loose text-[0.9375rem];
+    @apply text-[0.9375rem] leading-relaxed tracking-wide;
   }
 
   .sublist-disc {
@@ -90,5 +90,9 @@
 
   .sublist-disc > li {
     @apply ml-8 pl-1 text-[0.9375rem];
+  }
+
+  .list-disc.tight li {
+    @apply mb-1;
   }
 }
