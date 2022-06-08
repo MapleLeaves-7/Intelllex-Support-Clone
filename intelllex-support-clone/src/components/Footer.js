@@ -12,7 +12,7 @@ export function Footer() {
       <div style={{ flexGrow: '10' }}>
         <div className="flex flex-col gap-8 mb-12 md:flex-row">
           {/* More information section */}
-          <section>
+          <section className="flex-grow">
             <a className="block mb-5" href="https://intelllex.com/">
               Products & Services
             </a>
@@ -22,7 +22,7 @@ export function Footer() {
           </section>
 
           {/* Contact us section */}
-          <section>
+          <section className="flex-grow">
             <h3>Contact us</h3>
             <dl className="flex flex-col gap-3 mb-14">
               <dt>For support issues:</dt>
@@ -38,7 +38,7 @@ export function Footer() {
           </section>
 
           {/* Connect with us section */}
-          <section>
+          <section className="flex-grow">
             <h3>Connect with us</h3>
             <div className="flex gap-4">
               <a
@@ -61,7 +61,7 @@ export function Footer() {
         </div>
 
         {/* Copyright section */}
-        <section>
+        <section className="flex-grow">
           <span className="mr-2 text-xs text-gray-300">&copy; INTELLLEX</span>
           <a href="https://intelllex.com/privacy">Privacy</a>
           <span className="mx-1"> | </span>
