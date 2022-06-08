@@ -95,4 +95,21 @@
   .list-disc.tight li {
     @apply mb-1;
   }
+
+  table.boolean-filters {
+    @apply leading-relaxed;
+  }
+
+  table.boolean-filters > tbody > tr > td:first-child {
+    @apply align-top w-3/12 lg:w-2/12;
+  }
+
+  table.boolean-filters td,
+  table.boolean-filters th {
+    @apply pb-2;
+  }
+
+  table.boolean-filters td.example {
+    @apply italic;
+  }
 }
