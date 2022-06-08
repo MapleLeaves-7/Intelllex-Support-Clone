@@ -4,6 +4,7 @@ import { Error } from '../Error';
 import { SyncFoldersFiles } from './SyncFoldersFiles';
 import { OrganiseStacks } from './OrganiseStacks';
 import { SearchInStacks } from './SearchInStacks';
+import { ShareRequestAccess } from './ShareRequestAccess';
 export function Stacks() {
   let { page } = useParams();
   let content;
@@ -16,6 +17,9 @@ export function Stacks() {
       break;
     case 'search-in-stacks':
       content = <SearchInStacks />;
+      break;
+    case 'share-and-request-for-access':
+      content = <ShareRequestAccess />;
       break;
     default:
       content = <Error />;
