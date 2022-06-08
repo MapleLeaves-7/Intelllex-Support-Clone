@@ -30,7 +30,7 @@ export function SourceCoverage() {
             >
               <h2>Legal Commentaries</h2>
               <p>A curated selection of sources are available:</p>
-              <ul>
+              <ul className="list-disc">
                 <li>Barristers' Chambers (e.g. Fountain Court, Essex Court)</li>
                 <li>International Law Firms (e.g. Herbert Smith Freehills)</li>
                 <li>Digital Libraries (e.g. SAL Digital Archive)</li>
@@ -47,7 +47,7 @@ export function SourceCoverage() {
                 simple county courts to the highest appellate courts. We index
                 cases from these jurisdictions:
               </p>
-              <ul>
+              <ul className="list-disc">
                 <li>Singapore</li>
                 <li>United Kingdom</li>
                 <li>Hong Kong</li>
