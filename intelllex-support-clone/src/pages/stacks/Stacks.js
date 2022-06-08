@@ -3,6 +3,7 @@ import { Banner } from '../../components';
 import { Error } from '../Error';
 import { SyncFoldersFiles } from './SyncFoldersFiles';
 import { OrganiseStacks } from './OrganiseStacks';
+import { SearchInStacks } from './SearchInStacks';
 export function Stacks() {
   let { page } = useParams();
   let content;
@@ -12,6 +13,9 @@ export function Stacks() {
       break;
     case 'organise-your-stacks':
       content = <OrganiseStacks />;
+      break;
+    case 'search-in-stacks':
+      content = <SearchInStacks />;
       break;
     default:
       content = <Error />;
