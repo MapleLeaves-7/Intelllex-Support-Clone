@@ -11,16 +11,17 @@ export function OrganiseStacks() {
     'Organise Your Resources',
     'Manage Multiple Resources',
   ];
+  const heading = 'Organise your STACKS';
   return (
     <main className="subpage-main">
       <div className="subpage-container">
-        <Breadcrumb pageName="SOURCE+ Coverage" />
+        <Breadcrumb pageName={heading} />
         <div className="flex flex-col md:flex-row">
           <Navigation sections={sections} isSubPage={true} />
 
           <div className="subpage-content">
             <header>
-              <h1>Organise your STACKS</h1>
+              <h1>{heading}</h1>
               <div className="">Updated on April 01, 2019</div>
             </header>
             {/* Section 0: Intelligent Categorisation of Resources */}

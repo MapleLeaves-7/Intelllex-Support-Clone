@@ -10,16 +10,17 @@ export function ShareRequestAccess() {
     "Request for Access to Another User's Resource",
     'Share with Another User',
   ];
+  const heading = 'Share and Request for Access';
   return (
     <main className="subpage-main">
       <div className="subpage-container">
-        <Breadcrumb pageName="SOURCE+ Coverage" />
+        <Breadcrumb pageName={heading} />
         <div className="flex flex-col md:flex-row">
           <Navigation sections={sections} isSubPage={true} />
 
           <div className="subpage-content">
             <header>
-              <h1>Share and Request for Access</h1>
+              <h1>{heading}</h1>
               <div className="">Updated on April 01, 2019</div>
             </header>
 

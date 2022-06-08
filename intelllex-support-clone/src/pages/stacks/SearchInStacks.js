@@ -15,16 +15,17 @@ export function SearchInStacks() {
     'Use Search Filters in your Query',
     'Search through Auto-suggested Legal Questions',
   ];
+  const heading = 'Search in STACKS';
   return (
     <main className="subpage-main">
       <div className="subpage-container">
-        <Breadcrumb pageName="SOURCE+ Coverage" />
+        <Breadcrumb pageName={heading} />
         <div className="flex flex-col md:flex-row">
           <Navigation sections={sections} isSubPage={true} />
 
           <div className="subpage-content">
             <header>
-              <h1>Search in STACKS</h1>
+              <h1>{heading}</h1>
               <div className="">Updated on April 01, 2019</div>
             </header>
 

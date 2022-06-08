@@ -17,16 +17,17 @@ export function SyncFoldersFiles() {
     'Upload Multiple Sub-folders',
     'Supported File Types',
   ];
+  const heading = 'Sync or Upload Your Folders and Files';
   return (
     <main className="subpage-main">
       <div className="subpage-container">
-        <Breadcrumb pageName="SOURCE+ Coverage" />
+        <Breadcrumb pageName={heading} />
         <div className="flex flex-col md:flex-row">
           <Navigation sections={sections} isSubPage={true} />
 
           <div className="subpage-content">
             <header>
-              <h1>Sync or Upload Your Folders and Files</h1>
+              <h1>{heading}</h1>
               <div className="">Updated on April 01, 2019</div>
             </header>
 
