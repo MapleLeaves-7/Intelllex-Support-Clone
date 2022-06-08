@@ -23,7 +23,7 @@ export function OrganiseStacks() {
               <h1>Organise your STACKS</h1>
               <div className="">Updated on April 01, 2019</div>
             </header>
-
+            {/* Section 0: Intelligent Categorisation of Resources */}
             <section
               id={convertToId(sections[0])}
               className="subpage-content-item"
@@ -88,7 +88,7 @@ export function OrganiseStacks() {
                 <img src={intelligentCategorisation} alt="Remove a category" />
               </ul>
             </section>
-
+            {/* Section 1: Organise Your Resources */}
             <section
               id={convertToId(sections[1])}
               className="subpage-content-item"
@@ -127,6 +127,7 @@ export function OrganiseStacks() {
               </ul>
             </section>
 
+            {/* Section 1: Manage Multiple Resources */}
             <section
               id={convertToId(sections[2])}
               className="subpage-content-item"
