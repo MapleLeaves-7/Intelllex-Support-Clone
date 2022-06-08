@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
     /* scroll-padding-top: 3.5rem; same as padding top for each article section */
   }
+
+  img {
+    @apply py-4;
+  }
 }
 
 @layer components {
@@ -44,6 +48,10 @@
     @apply flex flex-col px-20 py-14 border border-light-gray bg-white;
   }
 
+  .subpage-content section > *:last-child {
+    @apply mb-0;
+  }
+
   .subpage-content > header {
     @apply mb-10 text-light-gray;
   }
@@ -60,14 +68,23 @@
     @apply mb-6 font-bold text-3xl;
   }
 
-  .subpage-content-item ul {
-    @apply list-disc;
+  .subpage-content-item h3 {
+    @apply font-bold mb-5;
   }
 
   .subpage-content-item li {
     @apply ml-8 mb-2;
   }
+
   .subpage-content-item p {
-    @apply mb-4;
+    @apply mb-5;
+  }
+
+  .sublist-disc {
+    @apply marker:content-['\25E6'] marker:text-2xl;
+  }
+
+  .sublist-disc > li {
+    @apply pl-2;
   }
 }
