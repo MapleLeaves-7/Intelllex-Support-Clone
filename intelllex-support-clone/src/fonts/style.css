@@ -18,6 +18,13 @@
 
 @font-face {
   font-family: 'Asap';
+  src: url(./Asap-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Asap';
   src: url(./Asap-Bold.ttf);
   font-weight: bold; /* font-weight is 700 */
 }
