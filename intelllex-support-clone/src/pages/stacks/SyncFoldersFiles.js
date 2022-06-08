@@ -20,7 +20,7 @@ export function SyncFoldersFiles() {
   const heading = 'Sync or Upload Your Folders and Files';
   return (
     <main className="subpage-main">
-      <div className="subpage-container">
+      <div className="subpage-container container-width-breakpoints">
         <Breadcrumb pageName={heading} />
         <div className="flex flex-col md:flex-row">
           <Navigation sections={sections} isSubPage={true} />

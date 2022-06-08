@@ -9,7 +9,7 @@ export function RefineYourSearch() {
   const heading = 'Refine Your Search';
   return (
     <main className="subpage-main">
-      <div className="subpage-container">
+      <div className="subpage-container container-width-breakpoints">
         <Breadcrumb pageName={heading} />
         <div className="flex flex-col md:flex-row">
           <Navigation sections={sections} isSubPage={true} />

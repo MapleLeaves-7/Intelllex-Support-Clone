@@ -36,12 +36,16 @@
     @apply w-7 h-7;
   }
 
+  .container-width-breakpoints {
+    @apply w-11/12 max-w-[34rem] md:max-w-[45rem] xl:max-w-[60rem] 2xl:max-w-6xl;
+  }
+
   .subpage-main {
     @apply flex justify-center items-center pb-14 pt-10 font-primary bg-off-white;
   }
 
   .subpage-container {
-    @apply flex flex-col gap-10 w-11/12 max-w-lg md:w-9/12 md:max-w-none xl:max-w-5xl 2xl:max-w-7xl;
+    @apply flex flex-col gap-10;
   }
 
   .subpage-content {

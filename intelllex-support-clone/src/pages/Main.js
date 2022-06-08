@@ -85,7 +85,7 @@ export function Main() {
     <>
       <Banner isMainPage={true} />
       <main className="flex justify-center mb-14">
-        <div className="flex flex-col md:flex-row gap-6 pt-16 w-11/12 max-w-[34rem] md:max-w-[45rem] xl:max-w-[60rem] 2xl:max-w-6xl md:pt-20">
+        <div className="flex flex-col md:flex-row gap-6 pt-16 md:pt-20 container-width-breakpoints">
           <Navigation sections={mainContentItems} />
           <div className="flex flex-col">
             {mainContentItems.map(item => (

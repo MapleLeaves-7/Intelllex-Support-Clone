@@ -18,7 +18,7 @@ export function SearchInStacks() {
   const heading = 'Search in STACKS';
   return (
     <main className="subpage-main">
-      <div className="subpage-container">
+      <div className="subpage-container container-width-breakpoints">
         <Breadcrumb pageName={heading} />
         <div className="flex flex-col md:flex-row">
           <Navigation sections={sections} isSubPage={true} />
