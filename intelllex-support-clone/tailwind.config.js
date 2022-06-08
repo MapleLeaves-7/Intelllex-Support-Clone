@@ -8,8 +8,11 @@ module.exports = {
         content: ['Asap', 'mono'],
       },
       screens: {
+        sm: '576px',
         md: '800px',
         // => @media (min-width: 800px) { ... }
+        lg: '992px',
+        xl: '1200px',
       },
       colors: {
         midnight: '#1b2533',
