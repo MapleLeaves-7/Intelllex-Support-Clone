@@ -82,7 +82,7 @@ export function SourceCoverage() {
               <p>Legislation & Regulations search coming soon.</p>
             </section>
 
-            <RequestContentInclusion />
+            <RequestContentInclusion caption="Let us know what content you would like us to include in SOURCE+ by emailing us at " />
           </div>
         </div>
       </div>
