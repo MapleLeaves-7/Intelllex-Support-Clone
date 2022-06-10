@@ -2,7 +2,7 @@ import { convertToId } from '../utils';
 
 export function Navigation({ sections, isSubPage }) {
   return (
-    <div className="basis-3/12 pr-4 md:basis-5/12">
+    <div className="pr-4 min-w-[25%]">
       {isSubPage && (
         <h3 className="pb-4 font-primary font-bold text-2xl text-dark-gray">
           Sections:
