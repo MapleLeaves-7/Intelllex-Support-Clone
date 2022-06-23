@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="flex flex-col gap-10 px-24 py-14 font-primary bg-midnight text-gray-200 text-sm md:flex-row">
       <div className="flex-grow flex-shrink-0">
-        <img className="w-14 h-14" src={logo} alt="Intelllex Logo" />
+        <img className="mt-0 w-14 h-14" src={logo} alt="Intelllex Logo" />
       </div>
       <div style={{ flexGrow: '10' }}>
         <div className="flex flex-col gap-8 mb-12 md:flex-row">
