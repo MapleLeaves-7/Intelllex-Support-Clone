@@ -96,10 +96,8 @@ export function CategoriesManagement() {
               </p>
               <ul className="list-decimal">
                 <li>Click on ‘Create new category’.</li>
-                <li>
-                  Key in the client name and save it.
-                  <img src={newCategory} alt="Create category" />
-                </li>
+                <li>Key in the client name and save it.</li>
+                <img src={newCategory} alt="Create category" />
               </ul>
             </section>
 
@@ -118,13 +116,13 @@ export function CategoriesManagement() {
               <ul className="list-decimal">
                 <li>
                   Click on ‘Options’ and select ‘Create a new sub-category’.
-                  <img src={newSubCategory1} alt="Create a new sub-category" />
                 </li>
+                <img src={newSubCategory1} alt="Create a new sub-category" />
                 <li>
                   Type in the sub-category name ‘Crypto’ and save it. There are
                   now 2 sub-categories under ‘Technology’.
-                  <img src={newSubCategory2} alt="Type in sub-category name" />
                 </li>
+                <img src={newSubCategory2} alt="Type in sub-category name" />
                 <li>
                   You may create up to 3 levels of sub-categories, starting from
                   the primary category ‘Technology’’ to the sub-category
@@ -151,19 +149,17 @@ export function CategoriesManagement() {
                   For example, you want to merge the categories ‘CAN’ and
                   ‘Canadian’ and rename the category to ‘Canada’.
                 </li>
-                <li>
-                  For ‘CAN’, select ‘Options’, and then ‘Merge to...’.
-                  <img src={mergeAndRename1} alt="Merge categories" />
-                </li>
+                <li>For ‘CAN’, select ‘Options’, and then ‘Merge to...’.</li>
+                <img src={mergeAndRename1} alt="Merge categories" />
                 <li>
                   This will bring you to a page to select the{' '}
                   <strong>destination category</strong> you want to merge to.
                   Select the category ‘Canadian’.
-                  <img
-                    src={mergeAndRename2}
-                    alt="Choose a destination category"
-                  />
                 </li>
+                <img
+                  src={mergeAndRename2}
+                  alt="Choose a destination category"
+                />
                 <li>
                   You will be brought to the next page to confirm the action.
                   You will be prompted if there are documents tied to the ‘CAN’
@@ -172,31 +168,28 @@ export function CategoriesManagement() {
                 <li>
                   You may review the document(s) in question by clicking on the
                   blue document number.
-                  <img src={mergeAndRename3} alt="Merging two categories" />
                 </li>
+                <img src={mergeAndRename3} alt="Merging two categories" />
                 <li>
                   This will launch a search in STACKS in a separate tab, with
                   the documents under the search results.
-                  <img
-                    src={mergeAndRename4}
-                    alt="Review documents to be merged"
-                  />
                 </li>
+                <img
+                  src={mergeAndRename4}
+                  alt="Review documents to be merged"
+                />
                 <li>
                   If you are certain you want to merge the category ‘CAN’ into
                   ‘Canadian’, click on the blue button ‘Yes, merge these
                   categories’. You will see that only the ‘Canadian’ category
                   remains.
-                  <img
-                    src={mergeAndRename5}
-                    alt="Only one remaining category"
-                  />
                 </li>
+                <img src={mergeAndRename5} alt="Only one remaining category" />
                 <li>
                   To rename the category ‘Canadian’ to ‘Canada’, click on
                   ‘Options’ and select ‘Rename’.
-                  <img src={mergeAndRename6} alt="Rename category" />
                 </li>
+                <img src={mergeAndRename6} alt="Rename category" />
                 <li>
                   It will prompt you that the two documents associated with
                   ‘Canadian’ will have their category name changed. Click on the
@@ -206,8 +199,8 @@ export function CategoriesManagement() {
                 <li>
                   Otherwise, just type the new category name ‘Canada’ and save
                   it.
-                  <img src={mergeAndRename7} alt="Type new category name" />
                 </li>
+                <img src={mergeAndRename7} alt="Type new category name" />
               </ul>
             </section>
 
@@ -228,8 +221,8 @@ export function CategoriesManagement() {
                 <li>
                   Click on ‘Options’ for the category ‘Cargo abandoned by
                   shipper’ and select ‘Move under…’
-                  <img src={nestCategories1} alt="Select move under" />
                 </li>
+                <img src={nestCategories1} alt="Select move under" />
                 <li>
                   You will be brought to a page to select the parent category.
                   Either browse by alphabetical order or simply enter ‘Cargo’ in
@@ -239,11 +232,11 @@ export function CategoriesManagement() {
                 <li>
                   Click on ‘Cargo’ to select it as the parent category and you
                   will be brought to the next page to confirm the action.{' '}
-                  <img
-                    src={nestCategories2}
-                    alt="Confirm parent category selection"
-                  />
                 </li>
+                <img
+                  src={nestCategories2}
+                  alt="Confirm parent category selection"
+                />
                 <li>
                   Click on the button ‘Yes, move these categories’ to proceed or
                   you can go back, if you have selected the wrong parent
@@ -252,12 +245,10 @@ export function CategoriesManagement() {
                 <li>
                   Do the same (steps 1-4) to move ‘Cargo within the
                   jurisdiction’ under ‘Cargo’ as well.
-                  <img src={nestCategories3} alt="Nest additional categories" />
                 </li>
-                <li>
-                  Now, ‘Cargo’ has both sub-categories nested under it.
-                  <img src={nestCategories4} alt="Multiple sub-categories" />
-                </li>
+                <img src={nestCategories3} alt="Nest additional categories" />
+                <li>Now, ‘Cargo’ has both sub-categories nested under it.</li>
+                <img src={nestCategories4} alt="Multiple sub-categories" />
               </ul>
             </section>
 
@@ -281,15 +272,13 @@ export function CategoriesManagement() {
                 <li>
                   Click on ‘Options’ to select ‘Convert to a stand-alone
                   category’ for ‘Trekkies Corp’
-                  <img
-                    src={standAloneCategory1}
-                    alt="Select 'Covert to stand-alone category'"
-                  />
                 </li>
-                <li>
-                  ‘Trekkies Corp’ is now a stand-alone category.
-                  <img src={standAloneCategory2} alt="Stand alone category" />
-                </li>
+                <img
+                  src={standAloneCategory1}
+                  alt="Select 'Covert to stand-alone category'"
+                />
+                <li>‘Trekkies Corp’ is now a stand-alone category.</li>
+                <img src={standAloneCategory2} alt="Stand alone category" />
               </ul>
             </section>
           </div>

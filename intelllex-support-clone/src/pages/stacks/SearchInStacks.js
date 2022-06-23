@@ -74,11 +74,11 @@ export function SearchInStacks() {
                 </li>
                 <li>
                   Scroll down to browse the categories in alphabetical order.
-                  <img
-                    src={firmLibrary1}
-                    alt="Browse categories in alphabetical order"
-                  />
                 </li>
+                <img
+                  src={firmLibrary1}
+                  alt="Browse categories in alphabetical order"
+                />
                 <li>
                   After you select the <strong>Legal Topic</strong> e.g.
                   Admiralty and Shipping, the associated sub-categories such as
@@ -93,22 +93,22 @@ export function SearchInStacks() {
                   If the document belongs to you, you can click on the file
                   title to view it. If it belongs to another user in the firm,
                   simply send a request to access it.
-                  <img src={firmLibrary2} alt="Request access" />
                 </li>
+                <img src={firmLibrary2} alt="Request access" />
                 <li>
                   When someone requests for permission to a document which you
                   own, you will receive an email notification to approve or deny
                   the request in the notifications panel.
-                  <img src={firmLibrary3} alt="Approve or deny requests" />
                 </li>
+                <img src={firmLibrary3} alt="Approve or deny requests" />
                 <li>
                   You can also view recently shared documents in your
                   notifications panel.
-                  <img
-                    src={firmLibrary4}
-                    alt="Recently shared documents in notifications panel"
-                  />
                 </li>
+                <img
+                  src={firmLibrary4}
+                  alt="Recently shared documents in notifications panel"
+                />
               </ul>
             </section>
 
@@ -135,11 +135,11 @@ export function SearchInStacks() {
                   Narrow down your results from the start by using the{' '}
                   <strong>4 Search Filters</strong> in the drop-down menu which
                   will appear when the search bar is clicked.
-                  <img
-                    src={searchFilters1}
-                    alt="Narrow results using 4 Search Filters"
-                  />
                 </li>
+                <img
+                  src={searchFilters1}
+                  alt="Narrow results using 4 Search Filters"
+                />
                 <li>
                   For example, when you type the filter{' '}
                   <strong>“owner:”</strong> in the search bar, a drop-down list
@@ -173,11 +173,11 @@ export function SearchInStacks() {
                     FAQ
                   </Link>
                   .
-                  <img
-                    src={searchFilters2}
-                    alt="Request access from another user"
-                  />
                 </li>
+                <img
+                  src={searchFilters2}
+                  alt="Request access from another user"
+                />
               </ul>
             </section>
 
@@ -204,11 +204,11 @@ export function SearchInStacks() {
                 <li>
                   You may also choose to delete any questions that are
                   automatically picked up.
-                  <img
-                    src={autoSuggested}
-                    alt="Delete questions that were automatically picked up"
-                  />
                 </li>
+                <img
+                  src={autoSuggested}
+                  alt="Delete questions that were automatically picked up"
+                />
               </ul>
             </section>
           </div>

@@ -35,20 +35,20 @@ export function ShareRequestAccess() {
                   belongs to you, you can click on the file title to view it. If
                   it belongs to another user in the firm, simply send a request
                   to access it.
-                  <img
-                    src={firmLibrary1}
-                    alt="Request for access from another user"
-                  />
                 </li>
+                <img
+                  src={firmLibrary1}
+                  alt="Request for access from another user"
+                />
                 <li>
                   When someone requests for permission to a document which you
                   own, you will receive an email notification to approve or deny
                   the request in the notifications panel.
-                  <img
-                    src={firmLibrary2}
-                    alt="Approve or deny requests in notification panel"
-                  />
                 </li>
+                <img
+                  src={firmLibrary2}
+                  alt="Approve or deny requests in notification panel"
+                />
                 <li>
                   You will receive an email notification when the user has
                   replied to your request.
@@ -56,11 +56,11 @@ export function ShareRequestAccess() {
                 <li>
                   You can also view recently shared documents in your
                   notifications panel.
-                  <img
-                    src={firmLibrary3}
-                    alt="View recently shared documents in notifications panel"
-                  />
                 </li>
+                <img
+                  src={firmLibrary3}
+                  alt="View recently shared documents in notifications panel"
+                />
               </ul>
             </section>
 
